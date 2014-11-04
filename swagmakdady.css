@@ -1,3 +1,11 @@
 h1{font-size: 30pt; 
-color: blue;}
-p{font-size: 20pt;}
+color: blue;
+  text-align: center;
+}
+p{font-size: 20pt;
+  text-align: center;
+}
+div{background: url(http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-climb-on-94.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}

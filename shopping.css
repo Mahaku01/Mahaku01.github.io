@@ -5,3 +5,5 @@ li{font-size: 20pt;}
 .drinks {color:blue;}
 .washing {color:green;}
 .healthy {color:brown;}
+il#finished {text-decoration: line-through;}
+il#gotit {text-decoration: line-through;}

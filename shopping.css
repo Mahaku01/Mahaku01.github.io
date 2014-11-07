@@ -12,3 +12,4 @@ li#gotit {text-decoration: line-through;
 li#baught {text-decoration: line-through;
 }
 li#purch,#purch1,#purch2,#purch3 { text-decoration: line-through}
+li {text-align: center;}

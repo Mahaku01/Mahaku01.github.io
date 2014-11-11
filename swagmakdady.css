@@ -5,13 +5,16 @@ color: blue;
 p{font-size: 20pt;
   text-align: center;
 }
-div{background-size: 1000px 1000px;
+div{background-size: 1000px;
     background-repeat: no-repeat;
 }
 img {
   margin-left: 900px;
   margin-height: 10px;
   }
+img.bigger {
+  margin-left 500px;
+  margin-height: 10px;
 li {
   font-size: 20pt;
 }

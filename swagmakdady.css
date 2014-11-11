@@ -19,3 +19,6 @@ img.bigger {
   margin-left: 700px;
   margin-height: 10px;
 }
+img#in {
+  position:inline;
+}

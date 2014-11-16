@@ -1,11 +1,11 @@
 <html>
 <style>
-nav {postion: relative;
+nav {postion: absolute;
 width: 10%;
 height: 10%;
 padding: -1px;
 }
-aside {positon: relative;
+aside {positon: absolute;
 float: right;
 }
 section {
@@ -13,7 +13,7 @@ section {
   top:0;
   left:0;
   border-radius: 10px;
-}
+  }
   .question{ 
   height: 175px;
   width: 250px;
@@ -28,7 +28,7 @@ section {
   background-color: green;
   z-index:-1;
   }
-  section:hover .question{
+  nav:hover .question{
     display: none;
   }
 </style>

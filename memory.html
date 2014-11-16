@@ -1,11 +1,11 @@
 <html>
 <style>
-nav {postion: absolute;
+nav {postion: relative;
 width: 10%;
 height: 10%;
 padding: -1px;
 }
-aside {positon: absolute;
+aside {positon: relative;
 float: right;
 }
 section {
@@ -29,7 +29,7 @@ section {
   z-index:-1;
   position: static;
   }
-  nav:hover .question{
+  section:hover .question{
     display: none;
   }
 </style>
@@ -41,12 +41,14 @@ section {
 <section class='answer'>
   Sum of x squared, minus sum of means, devided by n.
 </section>
-<section id='second' class='question'>
+</nav>
+<aside>
+  <section id='second' class='question'>
   How is the arithmetic mean calculated?
 </section>
 <section id='secondanswer' class='answer'>
   The total of all data points, divided by the number of point.
 </section>
-</nav>
+</aside>
 </body>
 </html>

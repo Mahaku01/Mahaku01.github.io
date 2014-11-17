@@ -16,7 +16,7 @@
          }
          section {
              float: left;
-             width: 18%;
+             width: 20%;
              height: 100%;
              background-color:#F8F8F8;
              color: black;
@@ -30,7 +30,7 @@
              width: 80%;
              height: 100%;
              overflow: scroll;
-             color: #E8E8E8;
+             color: #B8B8B8;
          }
          footer {
              clear: both;

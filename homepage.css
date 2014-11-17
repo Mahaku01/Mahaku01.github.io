@@ -18,10 +18,8 @@
              float: left;
              width: 20%;
              height: 500px;
-             background-color: white;
+             background-color: grey;
              color: black;
-              background: url(http://www.decalskin.com/wallpaper.php?file=samsung/SGS3-YU34.jpg);
-              background-size: 100% 100%;
          }
          aside {
             background-image: url("http://fc01.deviantart.net/fs71/i/2011/007/3/b/climbing_by_jenelizabeth-d36na6d.jpg");
@@ -38,7 +36,7 @@
              background-color: white;
          }
          body {
-             background-color: black;
+             background-color: grey;
              margin: 0%;
              bottom: 0%;
              top: 0%;

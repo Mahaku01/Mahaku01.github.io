@@ -34,21 +34,20 @@
    input:checked ~ .question {background-color: hotpink;}
  </style>
  <body>
- <button onclick="changeThisPageFunc();">"<input type = "checkbox">"</button>
+ <button onclick="changeThisPageFunc();"></button>
  <p>0</p>
  
 <script type="text/javascript">
  counter = 0
- changeThisPageFunc = function() {
+ updateCounter = function() {
  counter = counter + 1
- var myHTML
- myHTML = document.querySelector('input');
- myHTML.innerHTML = counter;
- myHTML.style.fontSize = counter+"px";
+ countSpot = document.querySelector('#myCounter')
+ countSpot.innerHTML = "Correct: " + counter;
+ 
  }
 </script>
  <nav>
- <input type='checkbox'>
+ <input type='checkbox' onclick="updateCounter();">
  <section class='question'>
    How do you work out the sum of squares (ss)?
  </section>
@@ -57,7 +56,7 @@
  </section>
  </nav>
  <nav>
- <input type='checkbox'>
+ <input type='checkbox' onclick="updateCounter();">
  <section class='question'>
   How do you work out the arithmatic mean?
  </section>
@@ -66,13 +65,14 @@
  </section>
  </nav>
  <nav>
- <input type='checkbox'>
+ <input type='checkbox' onclick="updateCounter();">
  <section class='question'>
   What does ANOVA stand for?
  </section>
  <section class='answer'>
    Analysis of varience this can be done for multipe samples.
  </section>
+ <h2 id='myCounter'> Correct: 0</h2>
  </nav>
  </body>
  </html>

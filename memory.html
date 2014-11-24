@@ -34,6 +34,19 @@
    input:checked ~ .question {background-color: hotpink;}
  </style>
  <body>
+ <button onclick="changeThisPageFunc();">Click Me!</button>
+       <p>0</p>
+       
+      <script type="text/javascript">
+          counter = 0
+          changeThisPageFunc = function() {
+              counter = counter + 1
+              var myHTML
+              myHTML = document.querySelector('input');
+              myHTML.innerHTML = counter;
+              myHTML.style.fontSize = counter+"px";
+          }
+      </script>
  <nav>
  <input type='checkbox'>
  <section class='question'>

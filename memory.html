@@ -37,11 +37,11 @@
  <script type="text/javascript">
  counter = 0
  updateCounter = function(cbId) {
-  theCheckbox = document.querySelector('#+cbId');
-  if (theCheckbox.checked) {
+  thecheckbox = document.querySelector('#+cbId');
+  if (thecheckbox.checked) {
    counter = counter + 1;
   } else {
-   counter = counter -1;
+   counter = counter - 1;
   }
  counter = counter + 1;
  countSpot = document.querySelector('#myCounter');
@@ -67,7 +67,7 @@
  </section>
  </nav>
  <nav>
- <inputid='cb3' type='checkbox' onclick="updateCounter(\"cb3\");">
+ <input id='cb3' type='checkbox' onclick="updateCounter(\"cb3\");">
  <section class='question'>
   What does ANOVA stand for?
  </section>

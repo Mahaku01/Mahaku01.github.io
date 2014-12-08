@@ -7,14 +7,17 @@
 <h1>shopping list</h1>
 <ul id="shop">
 </ul>
-<input type="text" size="40" id="one">
-<input type="text" size="40" id="two">
+<label for="item">red:</label>
+<input type="text" size="40" id="one"/>
+<label for="class">green:</label>
+<input type="text" size="40" id="two"/>
 <button onclick="listadd()">Add items</button>
 <script type="text/javascript">
   listadd = function() {
-    l = document.querySelector("#shop");
+    l = document.querySelector("#shop")
     ul = document.createElement("li");
-    contents = document.createTextNode (input());
+    add =document.querySelector("#one").value;
+    contents = document.createTextNode ("add")
     l.appendChild(contents)
     ul.appendChild(l)
     

@@ -14,12 +14,14 @@
 <button onclick="listadd()">Add items</button>
 <script type="text/javascript">
   listadd = function() {
+    myTextBox = document.querySelector("#one")
     l = document.querySelector("#shop")
     ul = document.createElement("li")
     add =document.querySelector("#one").value
     contents = document.createTextNode (add)
     ul.appendChild(contents)
     l.appendChild(ul)
+    myTextBox.value =""
     
   }
 </script>

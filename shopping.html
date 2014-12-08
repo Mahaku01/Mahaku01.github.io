@@ -8,16 +8,16 @@
 <ul id="shop">
 </ul>
 <label for="item">foodclass</label>
-<input type="text" size="40" id="one"/>
+<input type="text" size="40" id="one">
 <label for="class">item</label>
-<input type="text" size="40" id="two"/>
+<input type="text" size="40" id="two">
 <button onclick="listadd()">Add items</button>
 <script type="text/javascript">
   listadd = function() {
     l = document.querySelector("#shop")
-    ul = document.createElement("li");
-    add =document.querySelector("#one").value;
-    contents = document.createTextNode ("add")
+    ul = document.createElement("li")
+    add =document.querySelector("#one").value
+    contents = document.createTextNode (add)
     ul.appendChild(contents)
     l.appendChild(ul)
     

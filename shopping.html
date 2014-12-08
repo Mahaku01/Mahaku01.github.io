@@ -7,9 +7,9 @@
 <h1>shopping list</h1>
 <ul id="shop">
 </ul>
-<label for="item">red:</label>
+<label for="item">foodclass</label>
 <input type="text" size="40" id="one"/>
-<label for="class">green:</label>
+<label for="class">item</label>
 <input type="text" size="40" id="two"/>
 <button onclick="listadd()">Add items</button>
 <script type="text/javascript">
@@ -18,8 +18,8 @@
     ul = document.createElement("li");
     add =document.querySelector("#one").value;
     contents = document.createTextNode ("add")
-    l.appendChild(contents)
-    ul.appendChild(l)
+    ul.appendChild(contents)
+    l.appendChild(ul)
     
   }
 </script>

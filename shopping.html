@@ -5,10 +5,20 @@
 </head>
 <body>
 <h1>shopping list</h1>
-<ul>
-<input type="text" size="40">
-<input type="text" size="40">
-<botton>Add items</botton>
+<ul id="shop">
 </ul>
+<input type="text" size="40">
+<input type="text" size="40">
+<button onclick="listadd">Add items</button>
+<script type="text/javascript">
+  listadd = function() {
+    l = document.querySelector("#shop");
+    ul = document.createElement("li");
+    contents = document.creatTextNode ();
+    
+  }
+</script>
+
+
 </body>
 </html>

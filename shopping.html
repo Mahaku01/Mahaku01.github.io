@@ -11,7 +11,7 @@
 <input type="text" size="40" id="one">
 <select id = "foodstuff">
   <option id = "meat">meat</option>
-  <option id = "veggis">veggis</option>
+  <option id = "veggis">vegetables</option>
   <option id = "breads">breads</option>
   <option id = "snacks">snacks</option>
 </select>
@@ -23,13 +23,11 @@
     ul = document.createElement("li")
     cb = document.createElement("input")
     cb.type = "checkbox"
-    class = document.querySelector("foodstuff")
     add =document.querySelector("#one").value
     contents = document.createTextNode (add)
     ul.appendChild(cb)
     ul.appendChild(contents)
     l.appendChild(ul)
-    ul.classList.add(class)
     myTextBox.value =""
   
 </script>

@@ -23,15 +23,17 @@
     ul = document.createElement("li")
     cb = document.createElement("input")
     cb.type = "checkbox"
+    Class = document.querySelector("#foodstuff")
     add =document.querySelector("#one").value
     contents = document.createTextNode (add)
     ul.appendChild(cb)
     ul.appendChild(contents)
     l.appendChild(ul)
+    ul.classList.add(Class.value)
     myTextBox.value =""
   }
   updataList = function() {
-    theChecbox = document.querySelector("cb")
+    theChecbox = document.querySelector(cb)
     if (theCheckbox.checked) {
       textDecoration = line-through
     }

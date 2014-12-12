@@ -1,15 +1,15 @@
 h1 {color:blue;
 text-align: center}
 li{font-size: 20pt;}
-.carbs {color:red;}
-.drinks {color:blue;}
-.washing {color:green;}
-.healthy {color:grey;}
-li#finished {text-decoration: line-through; 
+#meat {
+  color: red;
 }
-li#gotit {text-decoration: line-through;
+#veggis {
+  color: green;
 }
-li#baught {text-decoration: line-through;
+#breads {
+  color: yellow;
 }
-li#purch,#purch1,#purch2,#purch3 { text-decoration: line-through}
-
+#snacks {
+  color:blue;
+}

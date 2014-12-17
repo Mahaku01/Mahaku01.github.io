@@ -4,12 +4,12 @@
 <link rel="stylesheet" href="shopping.css" type="text/css">
 </head>
 <body>
-<h1>shopping list</h1>
+<h1>Grocery List</h1>
 <main>
-<ul id="grocerylist">
+<ul id="shoppinglist">
 </ul>
 </main>
-<label for="item">grocery item</label>
+<label for="item">shopping item</label>
 <input type="text" id="item" size="40" id="one">
 <select id = "foodstuff">
   <option>meat</option>
@@ -19,7 +19,7 @@
 </select>
 <button onclick="listAdd();">Add items</button>
 <script type="text/javascript">
-window.onload = function() { restoreList('grocerylist',donetask) };
+window.onload = function() { restoreList('shoppinglist',donetask) };
 
 var taskCount = 10;
 doneTask = function() {
@@ -28,12 +28,12 @@ doneTask = function() {
   } else {
     this.parentNode.classList.remove("done")
   }
-  localSave('grocerylist')
+  localSave('shoppinglist')
   }
   listAdd = function() {
     var ul;
     myTextBox = document.querySelector("#item")
-    taskList =document.querySelector("#grocerylist")
+    taskList =document.querySelector("#shoppinglist")
     categoryValue = document.querySelector("#foodstuff").value;
     taskText = text.value;
     ul = document.createElement("li")
@@ -47,7 +47,7 @@ doneTask = function() {
     ul.appendChild(t);
     taskList.appendChild(ul);
     myTextBox.value =""
-    localSave('grocerylist)')
+    localSave('shoppinglist)')
   }
 </script>
 

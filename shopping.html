@@ -5,10 +5,12 @@
 </head>
 <body>
 <h1>shopping list</h1>
-<ul id="shop">
+<main>
+<ul id="grocerylist">
 </ul>
-<label for="item">foodclass</label>
-<input type="text" size="40" id="one">
+</main>
+<label for="item">grocery item</label>
+<input type="text" id="item" size="40" id="one">
 <select id = "foodstuff">
   <option>meat</option>
   <option>vegetables</option>
@@ -17,26 +19,36 @@
 </select>
 <button onclick="listAdd();">Add items</button>
 <script type="text/javascript">
+window.onload = function() { restoreList('grocerylist',donetask) };
+
+var taskCount = 10;
+doneTask = function() {
+  if (this.checked) {
+    this.parentNode.classList.add("done");
+  } else {
+    this.parentNode.classList.remove("done")
+  }
+  localSave('grocerylist')
+  }
+}
   listAdd = function() {
-    myTextBox = document.querySelector("#one")
-    l = document.querySelector("#shop")
+    var ul;
+    myTextBox = document.querySelector("#item")
+    taskList =document.querySelector("#grocerylist")
+    categoryValue = document.querySelector("#foodstuff").value;
+    taskText = text.value;
     ul = document.createElement("li")
+    ul.className = categoryValue;
     cb = document.createElement("input")
     cb.type = "checkbox"
     Class = document.querySelector("#foodstuff")
-    add =document.querySelector("#one").value
     contents = document.createTextNode (add)
     ul.appendChild(cb)
-    ul.appendChild(contents)
-    l.appendChild(ul)
-    ul.classList.add(Class.value)
+    t = document.createTextNode(taskText);
+    ul.appendChild(t);
+    taskList.appendChild(ul);
     myTextBox.value =""
-  }
-  updataList = function() {
-    theChecbox = document.querySelector(cb)
-    if (theCheckbox.checked) {
-      textDecoration = line-through
-    }
+    localSave('grocerylist)')
   }
 </script>
 

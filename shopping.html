@@ -18,10 +18,13 @@
   <option>snacks</option>
 </select>
 <button onclick="listAdd();">Add items</button>
+ <script src="grocery.js" type="text/javascript"></script>
+    <script src="http://reputablejournal.com/CS130/listsaver.js" type="text/javascript"></script>
 <script type="text/javascript">
 window.onload = function() { restoreList('shoppinglist',donetask) };
-
-var taskCount = 10;
+</script>
+<script>
+  var taskCount = 10;
 doneTask = function() {
   if (this.checked) {
     this.parentNode.classList.add("done");
@@ -49,7 +52,10 @@ doneTask = function() {
     myTextBox.value =""
     localSave('shoppinglist)')
   }
+
 </script>
+
+
 
 
 </body>

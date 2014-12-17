@@ -1,15 +1,48 @@
-h1 {color:blue;
-text-align: center}
-li{font-size: 20pt;}
-.meat {
-  color: red;
+h1 {
+    text-align: center;
 }
-.vegetables {
-  color: green;
+
+body {
+    background: #eeeeee;
 }
-.breads {
-  color: yellow;
+
+main {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    background: #8AA8DA;
 }
-.snacks {
-  color:blue;
+
+main ul {
+    list-style: none;
+    font-size: 16pt;
+}
+
+aside {
+    width: 66%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #5886B7;
+}
+
+.Produce {
+    color: green;
+}
+
+.Meat {
+    color: red;
+}
+
+.Canned {
+    color: black;
+}
+
+.Snacks {
+    color: orange;
+}
+
+.done {
+  text-decoration: line-through;
 }
